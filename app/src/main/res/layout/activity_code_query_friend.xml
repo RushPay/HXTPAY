@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_code_query_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hxtao.qmd.hxtpay.activity.CodeQueryFriendActivity">
+    
+    <include layout="@layout/layout_title"></include>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/icon_img_codequeery_act"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@mipmap/personicon"
+            />
+        <TextView
+            android:id="@+id/name_tv_codequeery_act"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/icon_img_codequeery_act"
+            android:layout_centerVertical="true"/>
+        <Button
+            android:id="@+id/add_btn_codequeery_act"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="添加"
+            android:textColor="@color/colorWhite"
+            android:background="@color/login_bg"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

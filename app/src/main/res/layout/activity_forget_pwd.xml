@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forget_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hxtao.qmd.hxtpay.activity.ForgetPwdActivity">
+
+    <include layout="@layout/layout_title">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:text="帐号"/>
+        <EditText
+            android:id="@+id/phoneNum_ed_forget_act"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:hint="手机号码"
+            android:background="@null"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/next_btn_forget_act"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:enabled="false"
+        android:text="下一步"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"/>
+</LinearLayout>

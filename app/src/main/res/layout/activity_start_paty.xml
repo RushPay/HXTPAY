@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start_paty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.hxtao.qmd.hxtpay.activity.StartPatyActivity">
+
+    <include
+        android:id="@+id/title_paty_start"
+        layout="@layout/layout_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/paty_theme"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/theme_ed_patystart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:padding="10dp"
+            android:background="@null"
+            android:textColor="@color/login_bg"
+            android:hint="@string/paty_theme_hint"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        >
+        <EditText
+            android:id="@+id/explain_ed_patystart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:gravity="top"
+            android:background="@drawable/shape_ed_ll"
+            android:hint="@string/paty_explain_hint"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/paty_address"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/address_ed_patystart"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@null"
+            android:padding="10dp"
+            android:hint="@string/paty_address_hint"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/sure_btn_patystart"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:text="@string/paty_sure"
+            android:background="@color/login_bg"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentBottom="true"
+           />
+
+    </RelativeLayout>
+</LinearLayout>

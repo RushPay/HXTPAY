@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite"
+                tools:context="com.hxtao.qmd.hxtpay.fragment.FriendFragment">
+
+    <include
+        android:id="@+id/titile_friendFra"
+        layout="@layout/layout_title">
+    </include>
+
+    <LinearLayout
+        android:id="@+id/showadd_ll_friendFra"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/titile_friendFra"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:id="@+id/badge_rl_friend_fra"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/showaddfriend_bg"/>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="新的朋友"
+            android:textSize="18sp"
+           />
+    </LinearLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefrseh_friend_fra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showadd_ll_friendFra">
+
+        <ListView
+            android:id="@+id/list_lv_friendFra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

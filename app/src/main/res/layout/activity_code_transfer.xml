@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_code_transfer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.hxtao.qmd.hxtpay.activity.CodeTransferActivity">
+
+    <include layout="@layout/layout_title"></include>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_img_codetransfer_act"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/personicon"/>
+
+    <TextView
+        android:id="@+id/name_tv_codetransfer_act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="用户名"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/monery_tv_codetransfer_act"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="转账金额"
+            android:inputType="numberDecimal"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/transfer_btn_codetransfer_act"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@color/login_bg"
+        android:text="转账"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"/>
+</LinearLayout>

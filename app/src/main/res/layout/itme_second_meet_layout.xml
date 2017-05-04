@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/itme_second_meet_icon_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/itme_second_meet_theme_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/itme_second_meet_icon_img"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/itme_second_meet_icon_img"
+            android:ellipsize="end"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/itme_second_meet_address_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/itme_second_meet_icon_img"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/itme_second_meet_icon_img"
+            android:singleLine="true"
+           />
+
+        <TextView
+            android:id="@+id/itme_second_meet_state_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:text="聚会中"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/itme_second_meet_deny_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_green"
+            android:text="拒绝"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/itme_second_meet_accept_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/itme_second_meet_deny_btn"
+            android:background="@drawable/shape"
+            android:text="接受"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/itme_second_meet_member_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center">
+    </LinearLayout>
+</LinearLayout>

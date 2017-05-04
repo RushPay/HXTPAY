@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_forget_pwd2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hxtao.qmd.hxtpay.activity.ForgetPwdActivity2">
+
+    <include layout="@layout/layout_title"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        >
+        <TextView
+            android:id="@+id/center_tv_forgetact2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/login_bg"
+            android:text="验证码"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我们已发送"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/center_tv_forgetact2"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="到你的手机"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_toRightOf="@id/center_tv_forgetact2"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/phoneNum_tv_forgetact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/authCode_tv_forget_act2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="验证码"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/authCode_ed_forget_act"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="验证码已发送"
+            android:gravity="center_vertical"
+            android:maxLength="5"
+            android:inputType="number"
+            android:layout_toRightOf="@id/authCode_tv_forget_act2"
+            />
+        <com.hxtao.qmd.hxtpay.widgets.TimeButton
+            android:id="@+id/time_btn_forget_act2"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteLine"
+            android:layout_toLeftOf="@id/time_btn_forget_act2"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next_btn_forget_act2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:enabled="false"
+        android:text="下一步"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"/>
+</LinearLayout>

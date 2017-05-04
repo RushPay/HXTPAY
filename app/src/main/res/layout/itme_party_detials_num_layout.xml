@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/icon_part_details_num_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        />
+
+    <TextView
+        android:id="@+id/name_part_details_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/out_part_details_num_btn"
+        android:layout_toRightOf="@id/icon_part_details_num_img"
+        android:text="大煞笔"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/out_part_details_num_btn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_radius_dp_btn"
+        android:text="踢出"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/bill_state_part_details_num_btn"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_radius_dp_btn"
+        android:text="付款"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/organizer_part_details_num_tv"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_organizer_orange_bg"
+        android:gravity="center"
+        android:text="组织者"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/monery_part_details_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/out_part_details_num_btn"
+        android:textColor="@color/colorLightOrange"
+        android:gravity="center"
+        android:text="400"
+        android:visibility="gone"
+        />
+</RelativeLayout>

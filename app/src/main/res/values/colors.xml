@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#545454</color>
+    <color name="login_bg">#108ee9</color>
+    <color name="colorWhiteLine">#eeeeee</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorWhiteGray">#f6f6fa</color>
+    <color name="colorGray">#858585</color>
+    <color name="colorBlack">#000</color>
+
+    <color name="c_efeff4">#efeff4</color><!-- 页面统一背景色-->
+    <color name="font_color_blue">#019fe9</color>
+    <color name="c_333333">#333333</color><!-- 标题等重要文字-->
+
+    <color name="colorGreen">#0e7f2a</color>
+
+    <color name="colorOrange">#ffc636</color>
+    <color name="colorLightOrange">#ff6a4c</color>
+    <color name="gray_uncheck">#D8D8D8</color>
+
+    <color name="navpage">#FFE1E8EB</color>
+
+</resources>

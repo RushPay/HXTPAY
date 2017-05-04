@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_invite_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hxtao.qmd.hxtpay.activity.InviteFriendActivity">
+    <Button
+        android:id="@+id/invite_btn_act"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="邀请好友"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_ll"/>
+    <ListView
+        android:id="@+id/invite_act_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/invite_btn_act">
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_modify_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.hxtao.qmd.hxtpay.activity.ModifyNameActivity">
+    <include layout="@layout/layout_title"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/diss_img_modify_act"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/diss_bg"
+            android:layout_marginRight="20dp"
+            android:visibility="gone"/>
+        <EditText
+            android:id="@+id/name_ed_modify_act"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/diss_img_modify_act"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="30dp"
+            android:background="@null"/>
+    </RelativeLayout>
+</LinearLayout>

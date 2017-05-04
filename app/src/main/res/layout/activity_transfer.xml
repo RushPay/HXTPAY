@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_transfer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hxtao.qmd.hxtpay.activity.TransferActivity">
+
+
+    <Button
+        android:id="@+id/choose_tranfer_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_ll"
+        android:text="确定"/>
+
+    <ListView
+        android:id="@+id/party_number_transfer_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/choose_tranfer_btn">
+
+    </ListView>
+</RelativeLayout>

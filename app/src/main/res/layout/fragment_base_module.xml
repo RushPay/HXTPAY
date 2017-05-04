@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ViewStub
+        android:id="@+id/fragmentlayout_load_failure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/layout_load_failure"/>
+
+    <FrameLayout
+        android:id="@+id/fragmentfg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

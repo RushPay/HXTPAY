@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_party_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.hxtao.qmd.hxtpay.activity.PartyDetailsActivity">
+
+    <include
+        android:id="@+id/title_party_details_ll"
+        layout="@layout/layout_title"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon_part_details_act_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:src="@mipmap/personicon"/>
+
+            <TextView
+                android:id="@+id/isorganizer_part_details_act_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/icon_part_details_act_img"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/shape_yellow"
+                android:text="组织者"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/theme_part_details_act_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/login_bg"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/address_part_details_act_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/theme_part_details_act_tv"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/message_part_details_act_tv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/address_part_details_act_tv"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_ed_ll"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorWhiteGray"
+        />
+
+    <RadioGroup
+        android:id="@+id/rg_partdetails_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <RadioButton
+            android:id="@+id/code_partdetails_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/party_code_bg"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/invite_partdetails_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/invite_friend_bg"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/transfer_partdetails_rb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/transfer_bg"
+            android:button="@null"/>
+
+        <RadioButton
+            android:id="@+id/cancel_partdetails_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@mipmap/cancel_party_bg"
+            android:button="@null"/>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorWhiteGray"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/time_part_details_act_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/lucky_part_details_act_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/number_part_details_act_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/number_part_details_act_tv"
+            android:gravity="center"
+            android:text="参与人数:"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/bottom_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            >
+
+            <Button
+                android:id="@+id/start_bill_part_details_act_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_ll"
+                android:text="发起结账"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/paylucky_part_details_act_ll"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/paylucky_part_details_act_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_ll"
+                    android:text="产生幸运人"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/bill_part_details_act_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_ll"
+                    android:text="个人结账"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/lucky_part_details_act_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/shape_ll"
+                android:text="生产幸运人"
+                android:textColor="@color/colorWhite"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/line_tv"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/numlist_part_details_act_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom_ll"
+            >
+        </ListView>
+    </RelativeLayout>
+
+</LinearLayout>

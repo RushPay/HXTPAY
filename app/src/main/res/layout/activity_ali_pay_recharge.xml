@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ali_pay_recharge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.hxtao.qmd.hxtpay.activity.AliPayRechargeActivity">
+
+    <include layout="@layout/layout_title">
+    </include>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="28dp"
+        android:text="充值金额"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/monery_alirech_act_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape"
+        android:padding="5dp"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"/>
+
+    <RadioGroup
+        android:id="@+id/recharge_group_alirech_act"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/wxpay_rbtn_alirech_act"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/selector_rb_wxpay"
+            />
+        <RadioButton
+            android:id="@+id/alipay_rbtn_alirech_act"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/selector_rb_alipay"
+            />
+        <RadioButton
+            android:id="@+id/cjpay_rbtn_alirech_act"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/selector_rb_cjpay"
+            />
+        <RadioButton
+            android:id="@+id/ylpay_rbtn_alirech_act"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/selector_rb_ylpay"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/recharge_alirech_act_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_radius_dp_btn"
+        android:text="去充值"/>
+</LinearLayout>

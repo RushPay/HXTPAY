@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_query_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hxtao.qmd.hxtpay.activity.QueryFriendActivity">
+    
+    <include layout="@layout/layout_title"></include>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_logo_margin_50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/query_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@mipmap/search_bg"/>
+        <EditText
+            android:id="@+id/query_que_ed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/query_img"
+            android:hint="请输入手机号查找好友"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/query_que_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_logo_margin_50dp"
+        android:enabled="false"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorWhite"
+        android:text="查询"/>
+    <ListView
+        android:id="@+id/show_que_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>

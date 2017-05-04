@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/addicon_add_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:padding="10dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/addname_add_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/addicon_add_img"
+       />
+
+    <TextView
+        android:id="@+id/addaccount_add_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/addicon_add_img"
+        android:layout_toRightOf="@id/addicon_add_img"/>
+
+    <Button
+        android:id="@+id/addaccept_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/shape_ll"
+        android:text="接受"/>
+
+    <Button
+        android:id="@+id/adddeny_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/addaccept_add_btn"
+        android:background="@drawable/shape_ll"
+        android:text="拒绝"/>
+</RelativeLayout>

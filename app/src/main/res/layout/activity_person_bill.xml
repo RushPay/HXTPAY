@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_person_bill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context="com.hxtao.qmd.hxtpay.activity.PersonBillActivity">
+
+    <include layout="@layout/layout_title"></include>
+
+
+    <com.hxtao.qmd.hxtpay.widgets.RefreshLayout
+        android:id="@+id/refresh_person_bill_act"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/list_person_bill_act"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+    </com.hxtao.qmd.hxtpay.widgets.RefreshLayout>
+
+
+
+</LinearLayout>

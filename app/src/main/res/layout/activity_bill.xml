@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bill"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.hxtao.qmd.hxtpay.activity.BillActivity">
+
+    <include
+        android:id="@+id/bill_titile"
+        layout="@layout/layout_title">
+
+    </include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="聚会消费"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:id="@+id/monery_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="元"
+            android:textColor="@color/colorLightOrange"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/party_monery_ed"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/monery_tv"
+            android:hint="请输入金额"
+            android:textColor="@color/colorLightOrange"
+            android:inputType="numberDecimal"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/aa_bill_act_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@mipmap/aa_bill_bg"/>
+
+    <Button
+        android:id="@+id/random_bill_act_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@mipmap/random_bill_bg"/>
+
+    <Button
+        android:id="@+id/tuhao_bill_act_btn"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@mipmap/tu_bill_bg"/>
+</LinearLayout>
